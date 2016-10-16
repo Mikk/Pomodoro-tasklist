@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PomodoroTimer">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+<div ng-controller="counterCtrl">
+    <p>{{counter | formatTimer}}</p>
+    <button ng-click="stop()">Stop</button>
+    <button ng-click="countdown()">Start</button>
+</div>
+
+</body>
+
+</html>
